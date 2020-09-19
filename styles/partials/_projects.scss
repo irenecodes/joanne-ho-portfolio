@@ -28,11 +28,31 @@
   padding-bottom: 15px;
   background: none;
   border: none;
+  display: inline-block;
   &:focus,
   &:active {
     outline: none;
   }
 }
 .active-portfolio {
-  border-bottom: 5px solid $dark-accent !important;
+  // border-bottom: 5px solid $dark-accent !important;
+}
+
+.buttons-container {
+  display: flex;
+}
+
+.button-box {
+  position: relative;
+}
+
+// Sliding Underline
+#slide-line {
+  position: absolute;
+  bottom: 0;
+  height: 5px;
+  background-color: $dark-accent;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  left: 0%;
 }

@@ -62,11 +62,18 @@
         </div>
       </section>
       <section id="portfolio">
-        <div class="button-container">
-          <button id="graphic-design-btn" class="active-portfolio">
-            Graphic Design
-          </button>
-          <button id="uiux-design-btn">UI/UX Design</button>
+        <div class="buttons-container">
+          <div class="button-box">
+            <button id="graphic-design-btn" class="active-portfolio">
+              Graphic Design
+            </button>
+            <span id="slide-line"></span>
+          </div>
+          <div class="button-box">
+            <button id="uiux-design-btn">
+              UI/UX Design<span id="slide-line"></span>
+            </button>
+          </div>
         </div>
 
         <div id="graphic-design">
@@ -132,18 +139,11 @@
             </legend>
 
             <label for="name"> Name</label>
-            <input
-              type="name"
-              placeholder="Name"
-              required="true"
-              id="name"
-              name="name"
-            />
+            <input type="name" required="true" id="name" name="name" />
 
             <label for="email-address">Email</label>
             <input
               type="email"
-              placeholder="Email address"
               required="true"
               id="email-address"
               name="_replyto"
@@ -152,7 +152,6 @@
             <label for="message">Message</label>
             <textarea
               name="message"
-              placeholder="Message"
               id="message"
               required="true"
               cols="30"
