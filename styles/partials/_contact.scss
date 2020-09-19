@@ -10,8 +10,10 @@
 }
 
 .contact-intro {
+  display: grid;
+  grid-gap: 1rem;
   h2 {
-    margin: 0 0 22.5px 0;
+    margin: 0;
     font-size: 2rem;
     text-transform: uppercase;
   }
@@ -55,4 +57,13 @@ textarea {
   padding: 19px 0;
   text-transform: uppercase;
   letter-spacing: 4px;
+}
+
+@media (max-width: 768px) {
+  #contact {
+    justify-content: center;
+    grid-template-columns: 1fr;
+    height: unset;
+    padding: 60px 0;
+  }
 }

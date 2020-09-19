@@ -1,8 +1,11 @@
 #portfolio {
-  height: 100vh;
+  @include wrapper;
+  padding: 108px 0;
+  // height: 100vh;
+  height: 100%;
   display: grid;
   align-content: center;
-  justify-content: center;
+  // justify-content: center;
   button {
     text-transform: uppercase;
     font-size: 1.25rem;
@@ -13,10 +16,11 @@
 #graphic-design,
 #uiux-design {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  // grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 1em;
   padding: 60px 0;
   outline: none;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
 
 #uiux-design {
@@ -55,4 +59,16 @@
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   left: 0%;
+}
+
+@media (max-width: 480px) {
+  #portfolio {
+    button {
+      margin-right: 20px;
+    }
+  }
+  #graphic-design,
+  #uiux-design {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
 }

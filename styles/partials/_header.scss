@@ -79,7 +79,7 @@ main {
   .content {
     grid-area: 1 / 2 / 3;
     // padding: 0px 66px 66px 0;
-    @include wrapper;
+    width: 80%;
     padding-bottom: 66px;
   }
   h1 {
@@ -92,5 +92,51 @@ main {
   p {
     letter-spacing: 3.2px;
     margin-bottom: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    width: 30vw;
+  }
+  main {
+    margin-left: 30vw;
+  }
+  .logo-container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  nav {
+    position: fixed;
+    width: 100%;
+    height: unset;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+
+    .active {
+      &:before,
+      &:after {
+        display: none;
+      }
+    }
+    .logo-container {
+      max-width: 80px;
+    }
+  }
+  main {
+    margin-left: 0;
+    margin-top: 81px;
+  }
+  .page-links {
+    display: none;
+  }
+  #about {
+    height: unset;
+    .content {
+      padding: 40px;
+      grid-area: 1 / 1 / 1 / 3;
+    }
   }
 }
