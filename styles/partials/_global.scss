@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@400;500;700&display=swap");
+
+// font-families
+$mukta: "Mukta", sans-serif;
+
+// colors
+$white: #fff;
+$black: #0e0e0e;
+$dark-accent: #00b0aa;
+$grey: #e8e8e8;
+$accent: #38bcb7;
+
+body {
+  font-size: 16px;
+  font-family: $mukta;
+}
