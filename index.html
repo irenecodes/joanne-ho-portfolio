@@ -18,19 +18,19 @@
     <link rel="stylesheet" href="styles/styles.css" />
   </head>
   <body>
-    <nav>
+    <nav id="nav">
       <div class="logo-container">
         <img src="/assets/Logo.svg" alt="Joanne Ho's logo." />
       </div>
       <ul class="page-links">
         <li>
-          <a href="#about">About</a>
+          <a class="link" href="#about">About</a>
         </li>
         <li>
-          <a href="#portfolio">Portfolio</a>
+          <a class="link" href="#portfolio">Portfolio</a>
         </li>
         <li>
-          <a href="#contact">Contact</a>
+          <a class="link" href="#contact">Contact</a>
         </li>
       </ul>
       <ul class="social">
@@ -45,10 +45,11 @@
           </a>
         </li>
       </ul>
+      <!-- <p>&copy; <span id="year"></span></p> -->
     </nav>
 
     <main>
-      <section class="about">
+      <section id="about">
         <div class="content">
           <h1>About</h1>
           <p>
@@ -60,28 +61,63 @@
           </p>
         </div>
       </section>
-      <section class="portfolio">
+      <section id="portfolio">
+        <div class="button-container">
+          <button id="graphic-design-btn" class="active-portfolio">
+            Graphic Design
+          </button>
+          <button id="uiux-design-btn">UI/UX Design</button>
+        </div>
+
         <div id="graphic-design">
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
+          <div>
+            <img src="https://placehold.it/276x200" alt="" />
+          </div>
+          <div>
+            <img src="https://placehold.it/276x200" alt="" />
+          </div>
+          <div>
+            <img src="https://placehold.it/276x200" alt="" />
+          </div>
+          <div>
+            <img src="https://placehold.it/276x200" alt="" />
+          </div>
+          <div>
+            <img src="https://placehold.it/276x200" alt="" />
+          </div>
+          <div>
+            <img src="https://placehold.it/276x200" alt="" />
+          </div>
         </div>
         <div id="uiux-design">
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
+          <div>
+            <img src="http://placekitten.com/276/200" alt="" />
+          </div>
+          <div>
+            <img src="http://placekitten.com/276/200" alt="" />
+          </div>
+          <div>
+            <img src="http://placekitten.com/276/200" alt="" />
+          </div>
+          <div>
+            <img src="http://placekitten.com/276/200" alt="" />
+          </div>
+          <div>
+            <img src="http://placekitten.com/276/200" alt="" />
+          </div>
+          <div>
+            <img src="http://placekitten.com/276/200" alt="" />
+          </div>
         </div>
       </section>
       <section id="contact">
-        <div>
+        <div class="contact-intro">
           <h2>Got a project? Let's chat!</h2>
-          <div class="image-container"></div>
+          <div class="image-container">
+            <div>
+              <img src="http://placekitten.com/276/418" alt="" />
+            </div>
+          </div>
         </div>
         <form
           action="https://formspree.io/JOANNES_EMAIL"
@@ -94,25 +130,24 @@
               Please fill out all inputs of the following form if you'd like to
               get in touch.
             </legend>
-            <div class="personal-input">
-              <label for="name"> Name</label>
-              <input
-                type="name"
-                placeholder="Name"
-                required="true"
-                id="name"
-                name="name"
-              />
 
-              <label for="email-address">Email</label>
-              <input
-                type="email"
-                placeholder="Email address"
-                required="true"
-                id="email-address"
-                name="_replyto"
-              />
-            </div>
+            <label for="name"> Name</label>
+            <input
+              type="name"
+              placeholder="Name"
+              required="true"
+              id="name"
+              name="name"
+            />
+
+            <label for="email-address">Email</label>
+            <input
+              type="email"
+              placeholder="Email address"
+              required="true"
+              id="email-address"
+              name="_replyto"
+            />
 
             <label for="message">Message</label>
             <textarea
@@ -125,10 +160,22 @@
               name="message"
             ></textarea>
 
-            <button type="submit">Send Message</button>
+            <button class="submit-btn" type="submit">Send Message</button>
           </fieldset>
         </form>
       </section>
     </main>
+    <!-- jQuery link -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- smooth scroll -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.2.0/jquery.smooth-scroll.min.js"></script>
+
+    <!-- link to js file -->
+    <script src="scripts.js"></script>
   </body>
 </html>

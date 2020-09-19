@@ -1,0 +1,57 @@
+#contact {
+  // padding: 0 67px;
+  @include wrapper;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-gap: 3rem;
+  justify-content: start;
+  align-items: center;
+}
+
+.contact-intro {
+  h2 {
+    margin: 0 0 22.5px 0;
+    font-size: 2rem;
+    text-transform: uppercase;
+  }
+}
+
+fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+}
+
+label {
+  letter-spacing: 3.2px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+input {
+  margin-bottom: 25px;
+}
+
+textarea {
+  margin-bottom: 30px;
+  resize: none;
+}
+
+input,
+textarea {
+  width: 100%;
+  border: 1px solid $dark-accent;
+  border-radius: 3px;
+}
+
+.submit-btn {
+  width: 100%;
+  background: $dark-accent;
+  color: $white;
+  border: none;
+  padding: 19px 0;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}

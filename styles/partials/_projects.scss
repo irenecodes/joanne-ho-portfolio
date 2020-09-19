@@ -1,0 +1,38 @@
+#portfolio {
+  height: 100vh;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  button {
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    margin-right: 60px;
+  }
+}
+
+#graphic-design,
+#uiux-design {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1em;
+  padding: 60px 0;
+  outline: none;
+}
+
+#uiux-design {
+  display: none;
+}
+
+#graphic-design-btn,
+#uiux-design-btn {
+  padding-bottom: 15px;
+  background: none;
+  border: none;
+  &:focus,
+  &:active {
+    outline: none;
+  }
+}
+.active-portfolio {
+  border-bottom: 5px solid $dark-accent !important;
+}

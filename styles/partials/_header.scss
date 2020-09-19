@@ -25,6 +25,25 @@ nav {
     list-style: none;
     letter-spacing: 3.2px;
   }
+  .active {
+    position: relative;
+    &:before,
+    &:after {
+      content: "";
+      display: inline-block;
+      width: 28px;
+      height: 2px;
+      border-bottom: 2px solid $black;
+      position: absolute;
+      top: 10px;
+    }
+    &:before {
+      left: -45px;
+    }
+    &:after {
+      right: -45px;
+    }
+  }
 }
 
 .social {
@@ -48,7 +67,7 @@ main {
   margin-left: 20vw;
 }
 
-.about {
+#about {
   background: #000 url("/assets/hero.jpg") no-repeat;
   background-size: cover;
   background-position: center;
@@ -59,7 +78,9 @@ main {
   height: 100vh;
   .content {
     grid-area: 1 / 2 / 3;
-    padding: 0px 66px 66px 0;
+    // padding: 0px 66px 66px 0;
+    @include wrapper;
+    padding-bottom: 66px;
   }
   h1 {
     font-size: 2rem;
