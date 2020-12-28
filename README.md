@@ -1,3 +1,3 @@
 # Client Portfolio - Joanne Ho
 
-Written in HTML, SCSS, and using CSS Grid.
+Portfolio prototype written in HTML, SCSS, and using CSS Grid.
